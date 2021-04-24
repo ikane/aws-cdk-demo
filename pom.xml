@@ -13,6 +13,17 @@
         <junit.version>5.7.1</junit.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>central</id>
+            <name>bintray</name>
+            <url>https://jcenter.bintray.com</url>
+        </repository>
+    </repositories>
+
     <build>
         <plugins>
             <plugin>
@@ -61,6 +72,11 @@
             <artifactId>assertj-core</artifactId>
             <version>3.18.1</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>dev.stratospheric</groupId>
+            <artifactId>cdk-constructs</artifactId>
+            <version>0.0.16</version>
         </dependency>
     </dependencies>
 </project>
